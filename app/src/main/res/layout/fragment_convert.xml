@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- TextView indicating the action -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You want transfer"
+        tools:ignore="HardcodedText"
+        android:textSize="18sp"
+        android:layout_marginBottom="5dp"/>
+
+    <!-- LinearLayout for flag and money input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/style_edit_text"
+        android:gravity="center_vertical">
+
+        <!-- ImageView for the country flag -->
+        <ImageView
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"
+            android:id="@+id/flag_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/country_world"
+            tools:ignore="ContentDescription,RtlHardcoded"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- EditText for entering the amount of money -->
+        <EditText
+            android:id="@+id/money_amount"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter amount"
+            android:inputType="numberDecimal"
+            android:background="@android:color/transparent"
+            tools:ignore="Autofill,HardcodedText" />
+    </LinearLayout>
+
+    <!--Text transfer to  -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To"
+        tools:ignore="HardcodedText"
+        android:textSize="18sp"
+        android:layout_marginBottom="5dp" />
+
+    <!-- LinearLayout for flag exchange to  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/style_edit_text"
+        android:gravity="center_vertical">
+
+        <!-- ImageView for the country flag -->
+        <ImageView
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"
+            android:id="@+id/flag_image_exchange2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/country_world"
+            tools:ignore="ContentDescription,RtlHardcoded"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- EditText for entering the amount of money -->
+        <EditText
+            android:id="@+id/money_exchanged_amount"
+            android:inputType="none"
+            android:textIsSelectable="true"
+            android:focusable="false"
+            android:maxLines="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Exchange Amount here"
+            android:background="@android:color/transparent"
+            android:layout_marginEnd="10dp"
+            tools:ignore="Autofill,HardcodedText,ObsoleteLayoutParam,TextFields" />
+    </LinearLayout>
+
+    <!--btn exchange money-->
+    <Button
+        android:id="@+id/btn_exchange"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transfer"
+        tools:ignore="HardcodedText" />
+
+    <!--a bit space-->
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:ignore="InefficientWeight" />
+    <!---->
+    <TextView
+        android:id="@+id/id_text_showCurrentValueMoney"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        tools:ignore="HardcodedText" />
+</LinearLayout>

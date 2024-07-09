@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_convert"
+        android:icon="@drawable/exchange"
+        android:title="Convert"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/navigation_chart"
+        android:icon="@drawable/bar_chart"
+        android:title="Chart"
+        tools:ignore="HardcodedText" />
+</menu>
