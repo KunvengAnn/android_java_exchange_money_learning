@@ -29,6 +29,9 @@ android {
 }
 
 dependencies {
+    // for chart
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
     // for bottom Navigation bar
     implementation 'com.google.android.material:material:1.4.0'
     // Add Retrofit dependency in build.gradle

@@ -30,15 +30,8 @@ public class NetworkUtils {
     }
 
     // Method to register connectivity change receiver
-    public static void registerNetworkChangeReceiver(Context context, final NetworkChangeListener listener) {
+    public static void registerNetworkChangeReceiver(Context context, BroadcastReceiver receiver) {
         IntentFilter filter = new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION);
-        BroadcastReceiver receiver = new BroadcastReceiver() {
-            @Override
-            public void onReceive(Context context, Intent intent) {
-                boolean isConnected = isNetworkConnected(context);
-                listener.onNetworkChanged(isConnected);
-            }
-        };
         context.registerReceiver(receiver, filter);
     }
 
